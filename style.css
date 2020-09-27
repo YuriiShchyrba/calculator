@@ -1,0 +1,32 @@
+html{
+    font-size: 10px;
+    background-image: linear-gradient(to right, #33CEFF, #33FF52);
+}
+
+input {
+    text-align: right;
+    width: 392px;
+    height: 80px;
+    background-image: linear-gradient(to right, #030000, #2B2828);
+    color: white;
+    font-size: 50px;
+}
+
+.wrapper{
+    margin: auto;
+    padding-top: 180px;
+    padding-left: 740px;
+}
+
+
+.row{
+    display: flex;
+}
+
+.buttons__button{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    height: 100px;
+    width: 100px;
+}
