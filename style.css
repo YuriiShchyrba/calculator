@@ -23,7 +23,7 @@ input {
     display: flex;
 }
 
-.buttons__button{
+.button{
     color: black;
     font-size: 30px;
     font-weight: 700;
