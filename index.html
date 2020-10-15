@@ -5,44 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="screen">
-            <form>
-                <input id="calc" value="0">
-            </form>
+            <div data-previousT class="previous"></div>
+            <div data-currentT class="current"></div>
         </div>
         <div class="buttons">
-            <div class="row">
-                <button class="button button__reset">AC</button>
-                <button class="button button__delete">DEL</button>
-                <button class="button button__operation">√</button>
-                <button class="button button__operation">/</button>
-            </div>
-            <div class="row">
-                <button class="button button__number">1</button>
-                <button class="button button__number">2</button>
-                <button class="button button__number">3</button>
-                <button class="button button__operation">*</button>
-            </div>
-            <div class="row">
-                 <button class="button button__number">4 </button>
-                 <button class="button button__number">5</button>
-                 <button class="button button__number">6</button>
-                 <button class="button button__operation">+</button>
-            </div>
-            <div class="row">
-                <button class="button button__number">7</button>
-                <button class="button button__number">8</button>
-                <button class="button button__number">9</button>
-                <button class="button button__operation">-</button>
-            </div>
-            <div class="row">
-                <button class="button button__dot">.</button>
-                <button class="button button__number">0</button>
-                <button class="button button__result">=</button>
-                <button class="button button__operation">^</button>
+
+                <button data-clearB class="button button__reset">AC</button>
+                <button data-deleteB class="button button__delete">DEL</button>
+                <button data-operation  class="button button__operation">√</button>
+                <button data-operation class="button button__operation">/</button>
+
+                <button data-number class="button button__number">1</button>
+                <button data-number class="button button__number">2</button>
+                <button data-number class="button button__number">3</button>
+                <button data-operation class="button button__operation">*</button>
+
+                 <button data-number class="button button__number">4 </button>
+                 <button data-number class="button button__number">5</button>
+                 <button data-number class="button button__number">6</button>
+                 <button data-operation class="button button__operation">+</button>
+
+                <button data-number class="button button__number">7</button>
+                <button data-number class="button button__number">8</button>
+                <button data-number class="button button__number">9</button>
+                <button data-operation class="button button__operation">-</button>
+
+                <button data-number class="button button__dot">.</button>
+                <button data-number class="button button__number">0</button>
+                <button data-resultB class="button button__result">=</button>
+                <button data-operation class="button button__operation">^</button>
             </div>
         </div>
     </div>

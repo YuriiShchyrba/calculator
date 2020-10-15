@@ -1,26 +1,44 @@
 html{
     font-size: 10px;
-    background-image: linear-gradient(to right, #33CEFF, #33FF52);
+    background-image: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
-input {
-    text-align: right;
-    width: 392px;
-    height: 80px;
-    background-image: linear-gradient(to right, #030000, #2B2828);
-    color: white;
-    font-size: 50px;
+
+.screen{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    width: 380px;
+    display: flex;
+    height: 100px;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
+.screen .previous{
+    font-size: 25px;
+    color: rgba(255, 255, 255, .75);
+}
+
+.screen .current{
+    font-size: 40px;
+    color: white;
+}
+
 
 .wrapper{
-    margin: auto;
-    padding-top: 180px;
-    padding-left: 740px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
 }
 
-
-.row{
-    display: flex;
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .button{
@@ -29,4 +47,11 @@ input {
     font-weight: 700;
     height: 100px;
     width: 100px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .75);
+
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, .9);
 }
